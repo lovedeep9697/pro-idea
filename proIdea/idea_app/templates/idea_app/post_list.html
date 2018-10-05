@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+		
+		<h1>Your Ideas</h1>
+		<ol>
+			{% for post in post_list %}
+				<h3><li><a href="{{post.id}}">{{post.title}}</a></li></h3>
+			{% endfor %}
+
+		</ol>
+
+
+{% endblock %}

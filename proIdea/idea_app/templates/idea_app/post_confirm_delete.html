@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+	
+	<h1>sure?</h1>
+	<form method = "POST">
+		{% csrf_token %}
+		<input class="btn btn-danger" type="submit" value="Confirm"> 
+		<!-- <a href=""></a>	 -->
+	</form>
+
+{% endblock %}
